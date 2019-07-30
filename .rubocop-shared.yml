@@ -1,0 +1,144 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+  - bin/*
+  - db/schema.rb
+  - db/migrate/*
+  - node_modules/**/*
+  - vendor/**/*
+Bundler/OrderedGems:
+  Enabled: false
+Layout/CaseIndentation:
+  EnforcedStyle: end
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+Layout/DotPosition:
+  EnforcedStyle: leading
+Layout/ElseAlignment:
+  Enabled: false
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Layout/EndAlignment:
+  Enabled: false
+Layout/IndentFirstArgument:
+  Enabled: false
+Layout/IndentFirstHashElement:
+  Enabled: false
+Layout/IndentationWidth:
+  Enabled: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+Layout/MultilineOperationIndentation:
+  Enabled: false
+Layout/RescueEnsureAlignment:
+  Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+Lint/MissingCopEnableDirective:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 60
+Metrics/BlockLength:
+  Enabled: false
+Metrics/BlockNesting:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Naming/FileName:
+  Enabled: false
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+Naming/PredicateName:
+  NamePrefixBlacklist:
+  - is_
+Naming/RescuedExceptionsVariableName:
+  PreferredName: err
+Rails:
+  Enabled: true
+Rails/HttpPositionalArguments:
+  Enabled: false
+Rails/InverseOf:
+  Enabled: false
+Rails/OutputSafety:
+  Enabled: false
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+Rails/SkipsModelValidations:
+  Enabled: false
+Rails/UnknownEnv:
+  Enabled: false
+Style/Alias:
+  Enabled: false
+Style/BracesAroundHashParameters:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/CollectionMethods:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Style/EachWithObject:
+  Enabled: false
+Style/FormatString:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Style/LambdaCall:
+  Exclude:
+  - app/views/**/*
+Style/ModuleFunction:
+  EnforcedStyle: extend_self
+Style/NegatedIf:
+  EnforcedStyle: postfix
+Style/NegatedWhile:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Style/RegexpLiteral:
+  Enabled: false
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+Style/SignalException:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+Style/SymbolArray:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
