@@ -1,4 +1,5 @@
 AllCops:
+  NewCops: enable
   DisplayCopNames: true
   Exclude:
   - bin/*
@@ -71,8 +72,6 @@ Naming/PredicateName:
 Naming/RescuedExceptionsVariableName:
   PreferredName: err
 Style/Alias:
-  Enabled: false
-Style/BracesAroundHashParameters:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
