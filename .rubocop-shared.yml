@@ -16,11 +16,11 @@ Layout/ClosingParenthesisIndentation:
 Layout/DotPosition:
   EnforcedStyle: leading
 Layout/ElseAlignment:
-  Enabled: false
+  Enabled: true
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EndAlignment:
-  Enabled: false
+  Enabled: true
 Layout/FirstArgumentIndentation:
   Enabled: false
 Layout/FirstHashElementIndentation:
