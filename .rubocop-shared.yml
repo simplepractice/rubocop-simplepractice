@@ -20,13 +20,11 @@ Layout/ElseAlignment:
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EndAlignment:
-  Enabled: false
+  EnforcedStyleAlignWith: variable
 Layout/FirstArgumentIndentation:
-  Enabled: false
+  EnforcedStyle: consistent
 Layout/FirstHashElementIndentation:
-  Enabled: false
-Layout/IndentationWidth:
-  Enabled: false
+  EnforcedStyle: consistent
 Layout/LineLength:
   Max: 120
   AutoCorrect: true
