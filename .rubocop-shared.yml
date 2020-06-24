@@ -15,8 +15,6 @@ Layout/ClosingParenthesisIndentation:
   Enabled: false
 Layout/DotPosition:
   EnforcedStyle: leading
-Layout/ElseAlignment:
-  Enabled: true
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EndAlignment:
@@ -24,9 +22,7 @@ Layout/EndAlignment:
 Layout/FirstArgumentIndentation:
   Enabled: false
 Layout/FirstHashElementIndentation:
-  Enabled: false
-Layout/IndentationWidth:
-  Enabled: true
+  EnforcedStyle: consistent
 Layout/LineLength:
   Max: 120
   AutoCorrect: true
