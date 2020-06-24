@@ -15,12 +15,14 @@ Layout/ClosingParenthesisIndentation:
   Enabled: false
 Layout/DotPosition:
   EnforcedStyle: leading
+Layout/ElseAlignment:
+  Enabled: false
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EndAlignment:
-  Enabled: true
+  EnforcedStyleAlignWith: variable
 Layout/FirstArgumentIndentation:
-  Enabled: false
+  EnforcedStyle: consistent
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 Layout/LineLength:
