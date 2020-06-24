@@ -1,6 +1,8 @@
 require: rubocop-rails
 Rails:
   Enabled: true
+Rails/FilePath:
+  EnforcedStyle: slashes # NOTE: for codeclimate
 Rails/HttpPositionalArguments:
   Enabled: false
 Rails/InverseOf:
