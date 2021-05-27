@@ -1,22 +1,22 @@
 AllCops:
   NewCops: enable
   DisplayCopNames: true
+  SuggestExtensions:
+    rubocop-rspec: false
   Exclude:
   - bin/*
-  - db/schema.rb
   - db/migrate/*
+  - db/schema.rb
+  - frontend/node_modules/**/*
   - node_modules/**/*
   - vendor/**/*
 Bundler/OrderedGems:
   Enabled: false
 Layout/CaseIndentation:
   EnforcedStyle: end
-Layout/ClosingParenthesisIndentation:
-  Enabled: false
 Layout/DotPosition:
   EnforcedStyle: leading
-Layout/ElseAlignment:
-  Enabled: false
+# NOTE: we don't care
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EndAlignment:
@@ -30,16 +30,31 @@ Layout/LineLength:
   AutoCorrect: true
   Exclude:
   - db/schema.rb
+# NOTE: we don't care
 Layout/MultilineMethodCallIndentation:
   Enabled: false
+# NOTE: we don't care
 Layout/MultilineOperationIndentation:
   Enabled: false
-Layout/RescueEnsureAlignment:
-  Enabled: false
+# NOTE: we don't care
 Lint/AmbiguousBlockAssociation:
   Enabled: false
+# NOTE: we don't care
+Lint/ConstantDefinitionInBlock:
+  Enabled: false
+# NOTE: JR set up and specs require empty blocks
+Lint/EmptyBlock:
+  Exclude:
+  - config/routes.rb
+  - config/routes/**/*
+  - spec/**/*
+# NOTE: we don't care
 Lint/MissingCopEnableDirective:
   Enabled: false
+# TODO: potentially enable after v1.10.0
+Lint/SymbolConversion:
+  Enabled: false
+# NOTE: codeclimate for metrics
 Metrics/AbcSize:
   Max: 60
 Metrics/BlockLength:
@@ -58,6 +73,7 @@ Metrics/ParameterLists:
   Enabled: false
 Metrics/PerceivedComplexity:
   Enabled: false
+# TODO: reevaluate all disabled rules below after v1.10.0
 Naming/AccessorMethodName:
   Enabled: false
 Naming/FileName:
@@ -69,6 +85,9 @@ Naming/PredicateName:
   - is_
 Naming/RescuedExceptionsVariableName:
   PreferredName: err
+# NOTE: we don't care
+Style/AccessorGrouping:
+  Enabled: false
 Style/Alias:
   Enabled: false
 Style/ClassAndModuleChildren:
