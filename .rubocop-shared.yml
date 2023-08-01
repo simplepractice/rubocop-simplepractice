@@ -7,8 +7,9 @@ AllCops:
   - bin/*
   - db/migrate/*
   - db/schema.rb
-  - frontend/node_modules/**/*
+  - frontend/**/*
   - node_modules/**/*
+  - tmp/**/*
   - vendor/**/*
 Bundler/OrderedGems:
   Enabled: false
@@ -16,7 +17,6 @@ Layout/CaseIndentation:
   EnforcedStyle: end
 Layout/DotPosition:
   EnforcedStyle: leading
-# NOTE: we don't care
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 Layout/EndAlignment:
@@ -30,16 +30,12 @@ Layout/LineLength:
   AutoCorrect: true
   Exclude:
   - db/schema.rb
-# NOTE: we don't care
 Layout/MultilineMethodCallIndentation:
   Enabled: false
-# NOTE: we don't care
 Layout/MultilineOperationIndentation:
   Enabled: false
-# NOTE: we don't care
 Lint/AmbiguousBlockAssociation:
   Enabled: false
-# NOTE: we don't care
 Lint/ConstantDefinitionInBlock:
   Enabled: false
 # NOTE: JR set up and specs require empty blocks
@@ -48,10 +44,8 @@ Lint/EmptyBlock:
   - config/routes.rb
   - config/routes/**/*
   - spec/**/*
-# NOTE: we don't care
 Lint/MissingCopEnableDirective:
   Enabled: false
-# TODO: potentially enable after v1.10.0
 Lint/SymbolConversion:
   Enabled: false
 # NOTE: codeclimate for metrics
@@ -73,32 +67,23 @@ Metrics/ParameterLists:
   Enabled: false
 Metrics/PerceivedComplexity:
   Enabled: false
-# TODO: reevaluate all disabled rules below after v1.10.0
-Naming/AccessorMethodName:
-  Enabled: false
-Naming/FileName:
-  Enabled: false
-Naming/HeredocDelimiterNaming:
-  Enabled: false
 Naming/PredicateName:
+  Exclude:
+  - app/resources/**/*
   ForbiddenPrefixes:
   - is_
 Naming/RescuedExceptionsVariableName:
   PreferredName: err
-# NOTE: we don't care
+# NOTE: style is opinionated, variance allowed, can be modified and autocorrected
 Style/AccessorGrouping:
   Enabled: false
 Style/Alias:
-  Enabled: false
-Style/ClassAndModuleChildren:
   Enabled: false
 Style/CollectionMethods:
   Enabled: false
 Style/Documentation:
   Enabled: false
 Style/DoubleNegation:
-  Enabled: false
-Style/EachWithObject:
   Enabled: false
 Style/FormatString:
   Enabled: false
@@ -119,12 +104,13 @@ Style/ModuleFunction:
   EnforcedStyle: extend_self
 Style/NegatedIf:
   EnforcedStyle: postfix
-Style/NegatedWhile:
-  Enabled: false
 Style/NumericLiterals:
   Enabled: false
 Style/PercentLiteralDelimiters:
-  Enabled: false
+  PreferredDelimiters:
+    default: "()"
+    "%i": "()"
+    "%w": "()"
 Style/RegexpLiteral:
   Enabled: false
 Style/RescueStandardError:
