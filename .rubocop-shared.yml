@@ -1,8 +1,7 @@
 AllCops:
   NewCops: enable
   DisplayCopNames: true
-  SuggestExtensions:
-    rubocop-rspec: false
+  SuggestExtensions: false
   Exclude:
   - bin/*
   - db/migrate/*
